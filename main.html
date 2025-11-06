@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--title and metadata-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal webpage for Pavithra">
+    <title>About Me!!!</title>
+    <link rel =" stylesheet " href ="styles.css">
+</head>
+<body>
+    <h1>About Me</h1>
+    <!--profile picture and link-->
+    <div class="profile">
+    <a href="">
+        <img class="picture" src="pavithra.jpg" alt="PAVITHRA">
+        <p>Hover over me!!</p>
+    </a>
+    </div>
+    <!--About me-->
+    <h2>About me</h2>
+    <p>Helloo my name is Pavithra. I am an enthusiastic noobie astronomist and passioante about AI and its possibilities. My strength and weaknesses:
+     <p>
+        <h3>Strengths</h3>
+        <ul>
+            <li>Hyperfocused</li>
+            <li>Loves being in a team</li>
+            <li>Can switch between creative and crtitical very easily</li>
+        </ul>
+        <h3>weaknesses</h3>
+        <ul>
+            <li>Hyperfocus leads to loss of focus on other things</li>
+            <li>Very detail oriented</li>
+            <li>Gets overwhelhmed</li>
+        </ul>
+        <!--bucket list-->
+        <h2>My bucket list</h2>
+        <table>
+            <tr><th>Serail Number</th>
+            <th>item</th>
+            <th>Status</th></tr>
+            <tr>
+                <td>1</td>
+                <td>Visit the great salt lake in utah</td>
+                <td>Not done</td>
+            </tr>
+            <tr><td>2</td>
+            <td>Make a lemon meringue pie</td>
+            <td>Not done</td></tr>
+            <tr><td>3</td>
+            <td>Learn Bharatnatyam again</td>
+            <td>Not done </td></tr>
+        </table>
+        <!--media embedding-->
+        <h2>Favourite movie clip</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/nGBYEUNKPmo?si=hKnUiH_Beldrt8sW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Favourite song</h2>
+       <iframe style="border-radius:12px" 
+src="https://open.spotify.com/embed/track/7ouMYWpwJ422jRcDASZB7P?utm_source=generator" 
+width="350" height="200" frameBorder="0" allowfullscreen="" 
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+<!--javascript-->
+<button onclick="message()">Touch me</button>
+<script>
+        function message() {
+            alert("HI GUYSSS");
+        }
+
+        const pic = document.getElementById("profile-pic");
+
+        pic.addEventListener("mouseover", function () {
+            document.body.style.backgroundColor = "#27D3F5";
+        });
+
+        pic.addEventListener("mouseout", function () {
+            document.body.style.backgroundColor = "#A450ED";
+        });
+    </script>
+</body>
+</html>
